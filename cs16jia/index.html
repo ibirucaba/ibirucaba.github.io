@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cs1.6加人补丁-反恐精英1.6机器人补丁下载与安装教程</title>
+    <meta name="description" content="提供cs1.6加人补丁下载资源，详细介绍反恐精英1.6机器人补丁的安装步骤、使用方法和常见问题，帮助玩家快速添加电脑人进行单机对战练习。">
+    <meta name="keywords" content="cs1.6加人补丁,cs1.6机器人补丁,cs1.6加电脑人,cs1.6单机加人,cs1.6补丁下载">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Microsoft YaHei", sans-serif;
+            background: #1a1e24;
+            color: #2c3e50;
+            line-height: 1.6;
+        }
+
+        .wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: linear-gradient(135deg, #0f1419 0%, #1a2634 100%);
+            border-bottom: 3px solid #e67e22;
+            padding: 18px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: #e67e22;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            font-weight: 900;
+            color: #fff;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .logo-text {
+            color: #fff;
+            font-size: 1.3rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .logo-text span {
+            color: #e67e22;
+        }
+
+        .header-tagline {
+            color: #aab8c5;
+            font-size: 0.85rem;
+            background: rgba(255,255,255,0.05);
+            padding: 6px 12px;
+            border-radius: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* 导航 */
+        .main-nav {
+            background: #151b22;
+            border-bottom: 1px solid #2a3540;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .nav-list li a {
+            display: block;
+            padding: 12px 22px;
+            color: #b8c6d4;
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            border-bottom: 2px solid transparent;
+        }
+
+        .nav-list li a:hover,
+        .nav-list li a.active {
+            color: #e67e22;
+            background: rgba(230, 126, 34, 0.08);
+            border-bottom-color: #e67e22;
+        }
+
+        /* 主体 */
+        main {
+            padding: 30px 0 50px;
+            background: #f0f2f5;
+        }
+
+        /* 面包屑 */
+        .breadcrumb {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+            padding: 8px 0;
+        }
+
+        .breadcrumb a {
+            color: #e67e22;
+            text-decoration: none;
+        }
+
+        /* 首屏区域 */
+        .hero-section {
+            background: linear-gradient(145deg, #1b2838 0%, #2a3b4c 100%);
+            border-radius: 12px;
+            padding: 40px 35px;
+            margin-bottom: 35px;
+            color: #fff;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .hero-content h1 {
+            font-size: 2rem;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: #fff;
+            font-weight: 800;
+        }
+
+        .hero-content h1 .highlight {
+            color: #e67e22;
+        }
+
+        .hero-content p {
+            color: #c9d6e0;
+            margin-bottom: 20px;
+            font-size: 1rem;
+        }
+
+        .hero-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .badge {
+            background: rgba(230, 126, 34, 0.15);
+            border: 1px solid rgba(230, 126, 34, 0.4);
+            color: #f5b041;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        .btn-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 28px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-primary {
+            background: #e67e22;
+            color: #fff;
+            box-shadow: 0 4px 12px rgba(230, 126, 34, 0.3);
+        }
+
+        .btn-primary:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-light {
+            background: transparent;
+            border: 1.5px solid rgba(255,255,255,0.6);
+            color: #fff;
+        }
+
+        .btn-outline-light:hover {
+            background: rgba(255,255,255,0.1);
+        }
+
+        .hero-preview {
+            background: rgba(0,0,0,0.3);
+            border-radius: 10px;
+            padding: 20px;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .preview-title {
+            font-size: 0.9rem;
+            color: #8fa6b8;
+            margin-bottom: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .preview-list {
+            list-style: none;
+        }
+
+        .preview-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.9rem;
+            color: #e0e8ee;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .preview-list li:last-child {
+            border-bottom: none;
+        }
+
+        .preview-list li::before {
+            content: "▸";
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        /* 内容网格布局 */
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 300px;
+            gap: 30px;
+        }
+
+        /* 主内容区 */
+        .main-content {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #1a2634;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
+            border-bottom: 2px solid #eef1f4;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 60px;
+            height: 2px;
+            background: #e67e22;
+        }
+
+        .section-subtitle {
+            font-size: 1.1rem;
+            color: #34495e;
+            margin: 20px 0 10px;
+        }
+
+        .intro-text {
+            background: #f8f9fa;
+            border-left: 4px solid #e67e22;
+            padding: 18px 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 25px;
+            font-size: 0.95rem;
+        }
+
+        /* 特性卡片 */
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 16px;
+            margin: 25px 0;
+        }
+
+        .feature-card {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+            border: 1px solid #e9ecef;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        .feature-icon {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .feature-card h3 {
+            font-size: 1rem;
+            color: #2c3e50;
+            margin-bottom: 8px;
+        }
+
+        .feature-card p {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+
+        /* 步骤列表 */
+        .steps-list {
+            counter-reset: step;
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        .steps-list li {
+            counter-increment: step;
+            position: relative;
+            padding: 14px 0 14px 50px;
+            border-bottom: 1px solid #f0f2f5;
+        }
+
+        .steps-list li:last-child {
+            border-bottom: none;
+        }
+
+        .steps-list li::before {
+            content: counter(step);
+            position: absolute;
+            left: 0;
+            top: 14px;
+            width: 34px;
+            height: 34px;
+            background: #e67e22;
+            color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            font-size: 0.9rem;
+        }
+
+        .steps-list li strong {
+            color: #2c3e50;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .steps-list li p {
+            color: #6c7a89;
+            font-size: 0.9rem;
+        }
+
+        /* 下载按钮区域 */
+        .download-box {
+            background: linear-gradient(135deg, #1a2634, #2c3e50);
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            margin: 30px 0;
+            color: #fff;
+        }
+
+        .download-box h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .download-box p {
+            color: #aab8c5;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .download-btn {
+            display: inline-block;
+            background: #e67e22;
+            color: #fff;
+            padding: 14px 40px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 6px 20px rgba(230, 126, 34, 0.4);
+            transition: all 0.2s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .download-btn:hover {
+            background: #d35400;
+            transform: translateY(-2px);
+        }
+
+        .download-note {
+            margin-top: 12px;
+            font-size: 0.8rem;
+            color: #8fa6b8;
+        }
+
+        /* 注意事项 */
+        .notice-list {
+            list-style: none;
+            margin: 15px 0;
+        }
+
+        .notice-list li {
+            padding: 8px 0 8px 30px;
+            position: relative;
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        .notice-list li::before {
+            content: "⚠";
+            position: absolute;
+            left: 0;
+            color: #e67e22;
+        }
+
+        /* FAQ */
+        .faq-item {
+            margin-bottom: 15px;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            background: #f8f9fa;
+            padding: 14px 18px;
+            font-weight: 600;
+            color: #2c3e50;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: "+";
+            font-size: 1.3rem;
+            color: #e67e22;
+        }
+
+        .faq-answer {
+            padding: 14px 18px;
+            background: #fff;
+            color: #555;
+            font-size: 0.92rem;
+            border-top: 1px solid #e9ecef;
+        }
+
+        /* 侧边栏 */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .sidebar-widget {
+            background: #fff;
+            border-radius: 10px;
+            padding: 22px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+        }
+
+        .widget-title {
+            font-size: 1.15rem;
+            color: #1a2634;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #f0f2f5;
+            position: relative;
+        }
+
+        .widget-title::after {
+            content: "";
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 40px;
+            height: 2px;
+            background: #e67e22;
+        }
+
+        .widget-list {
+            list-style: none;
+        }
+
+        .widget-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+            font-size: 0.9rem;
+        }
+
+        .widget-list li:last-child {
+            border-bottom: none;
+        }
+
+        .widget-list li a {
+            color: #34495e;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .widget-list li a:hover {
+            color: #e67e22;
+        }
+
+        .version-tag {
+            display: inline-block;
+            background: #e67e22;
+            color: #fff;
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            margin-right: 6px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #0f1419;
+            color: #8fa6b8;
+            padding: 30px 0;
+            font-size: 0.85rem;
+            border-top: 3px solid #e67e22;
+        }
+
+        .footer-inner {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .footer-col h4 {
+            color: #c9d6e0;
+            margin-bottom: 12px;
+            font-size: 1rem;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 6px;
+        }
+
+        .footer-col ul li a {
+            color: #8fa6b8;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .footer-col ul li a:hover {
+            color: #e67e22;
+        }
+
+        .footer-bottom {
+            margin-top: 25px;
+            padding-top: 20px;
+            border-top: 1px solid #2a3540;
+            text-align: center;
+            color: #6c7a89;
+        }
+
+        /* 响应式 */
+        @media (max-width: 992px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-section {
+                grid-template-columns: 1fr;
+                padding: 30px 25px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-content h1 {
+                font-size: 1.6rem;
+            }
+
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-list li a {
+                padding: 10px 14px;
+                font-size: 0.85rem;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .download-box {
+                padding: 20px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .wrapper {
+                padding: 0 12px;
+            }
+
+            .hero-section {
+                padding: 20px;
+                margin-bottom: 25px;
+            }
+
+            .btn-group {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                text-align: center;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrapper header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">CS</div>
+            <div class="logo-text">反恐精英<span>1.6</span> 加人补丁站</div>
+        </div>
+        <div class="header-tagline">单机练习 · 机器人对战 · 补丁下载</div>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <div class="wrapper">
+        <ul class="nav-list">
+            <li><a href="#" class="active">首页</a></li>
+            <li><a href="#">补丁下载</a></li>
+            <li><a href="#">安装教程</a></li>
+            <li><a href="#">常见问题</a></li>
+            <li><a href="#">版本说明</a></li>
+            <li><a href="#">玩家社区</a></li>
+        </ul>
+    </div>
+</nav>
+
+<main>
+    <div class="wrapper">
+        <div class="breadcrumb">
+            <a href="#">首页</a> &gt; <a href="#">CS1.6补丁</a> &gt; 加人补丁
+        </div>
+
+        <!-- 首屏 -->
+        <section class="hero-section">
+            <div class="hero-content">
+                <h1>cs1.6加人补丁 <span class="highlight">机器人补丁</span> 下载与安装指南</h1>
+                <p>为反恐精英1.6添加电脑机器人，无需联网即可享受完整对战体验。支持自定义人数、难度与地图适配，让单机练习不再枯燥。</p>
+                <div class="hero-badges">
+                    <span class="badge">✔ 支持多版本</span>
+                    <span class="badge">✔ 一键安装</span>
+                    <span class="badge">✔ 稳定兼容</span>
+                    <span class="badge">✔ 无病毒安全</span>
+                </div>
+                <div class="btn-group">
+                    <a href="#" class="btn btn-primary">立即下载补丁</a>
+                    <a href="#" class="btn btn-outline-light">查看安装教程</a>
+                </div>
+            </div>
+            <div class="hero-preview">
+                <div class="preview-title">补丁功能一览</div>
+                <ul class="preview-list">
+                    <li>支持最多32个机器人同时加入</li>
+                    <li>可调节机器人难度等级</li>
+                    <li>兼容经典地图与自定义地图</li>
+                    <li>支持团队死亡竞技模式</li>
+                    <li>补全缺失的bot路点文件</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 内容区 -->
+        <div class="content-grid">
+            <div class="main-content">
+                <!-- 简介 -->
+                <h2 class="section-title">什么是cs1.6加人补丁</h2>
+                <div class="intro-text">
+                    <p>cs1.6加人补丁是指为《反恐精英1.6》添加机器人（Bot）功能的增强补丁。原版游戏在离线模式下无法添加电脑对手，而安装该补丁后，玩家可以在本地游戏中随时添加不同数量的机器人进行对战练习，从而提升枪法、走位和战术配合能力。</p>
+                </div>
+
+                <p>对于许多新玩家和怀旧老玩家来说，CS1.6的联机服务器环境可能并不友好，或者网络条件不允许流畅对战。此时，通过加人补丁在本地创建人机对战房间，就成为了最方便、最稳定的训练方式。补丁不仅支持普通死亡竞赛，还能适配爆破模式、人质救援模式等多种玩法。</p>
+
+                <!-- 特性卡片 -->
+                <h2 class="section-title">补丁核心特性</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">👥</div>
+                        <h3>自定义人数</h3>
+                        <p>自由调整机器人数量，从1v1到16v16均可设置，满足不同练习需求。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">⚙️</div>
+                        <h3>难度调节</h3>
+                        <p>机器人AI支持简单、普通、困难、专家等难度档位，逐步提升挑战性。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🗺️</div>
+                        <h3>地图兼容</h3>
+                        <p>内置常用地图路点文件，并支持自动生成路点，兼容玩家自定义地图。</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🛡️</div>
+                        <h3>稳定安全</h3>
+                        <p>补丁经过严格测试，不修改游戏核心文件，安装后可随时卸载还原。</p>
+                    </div>
+                </div>
+
+                <!-- 安装步骤 -->
+                <h2 class="section-title">安装步骤详解</h2>
+                <p>以下以最常见的Podbot加人补丁为例，说明安装过程。整个操作约5分钟即可完成。</p>
+                <ol class="steps-list">
+                    <li>
+                        <strong>备份游戏文件</strong>
+                        <p>在安装前，建议将游戏根目录下的 <code>cstrike</code> 文件夹复制一份备份，以防操作失误。</p>
+                    </li>
+                    <li>
+                        <strong>下载补丁压缩包</strong>
+                        <p>从本站或官方渠道下载cs1.6加人补丁压缩包，文件格式通常为ZIP或RAR。</p>
+                    </li>
+                    <li>
+                        <strong>解压补丁文件</strong>
+                        <p>使用解压工具将压缩包解压，得到包含 <code>addons</code>、<code>cstrike</code> 等子文件夹的目录。</p>
+                    </li>
+                    <li>
+                        <strong>覆盖至游戏目录</strong>
+                        <p>将解压出的所有文件复制到CS1.6的安装根目录中。若提示覆盖文件，选择“全部覆盖”即可。</p>
+                    </li>
+                    <li>
+                        <strong>启动游戏验证</strong>
+                        <p>进入游戏后，在控制台输入 <code>pb addbot</code> 或按 <code>=</code> 键调出机器人菜单，即可添加机器人。</p>
+                    </li>
+                </ol>
+
+                <!-- 下载区域 -->
+                <div class="download-box">
+                    <h3>cs1.6加人补丁 完整版</h3>
+                    <p>支持v1.5 / v1.6 常见版本 · 兼容Steam与盗版客户端 · 含详细说明文档</p>
+                    <a href="#" class="download-btn">⬇ 下载补丁压缩包</a>
+                    <p class="download-note">文件大小约 8.2 MB · 下载前请阅读安装说明</p>
+                </div>
+
+                <!-- 使用说明 -->
+                <h2 class="section-title">如何使用加人功能</h2>
+                <p>安装补丁后，控制台命令是快速添加机器人的主要方式。常用指令如下：</p>
+                <ul class="notice-list">
+                    <li><strong>pb addbot</strong> — 添加一个随机阵营的机器人</li>
+                    <li><strong>pb addbot 5</strong> — 一次性添加5个机器人</li>
+                    <li><strong>pb addbot 3 T</strong> — 添加3个恐怖分子阵营机器人</li>
+                    <li><strong>pb botmenu</strong> — 打开图形化机器人管理菜单</li>
+                    <li><strong>pb removebots</strong> — 移除所有机器人</li>
+                </ul>
+                <p>此外，在游戏进行中按 <strong>“=”</strong> 键可以快速呼出机器人操作面板，无需记忆命令即可完成添加与移除操作。</p>
+
+                <!-- 注意事项 -->
+                <h2 class="section-title">使用注意事项</h2>
+                <ul class="notice-list">
+                    <li>请确保游戏版本为1.6，部分补丁不支持早期的1.5版本。</li>
+                    <li>如果机器人不移动，可能是地图缺少路点文件，请使用 <code>pb wpmenu</code> 命令生成路点。</li>
+                    <li>在线对战模式下建议关闭机器人，以免影响服务器性能。</li>
+                    <li>杀毒软件可能误报补丁文件，建议先添加信任再解压使用。</li>
+                    <li>不要将补丁文件覆盖到Steam云同步目录，避免同步冲突。</li>
+                </ul>
+
+                <!-- FAQ -->
+                <h2 class="section-title">常见问题解答</h2>
+                <div class="faq-item">
+                    <div class="faq-question">为什么安装后进入游戏没有反应？</div>
+                    <div class="faq-answer">请确认补丁文件是否放置在正确的游戏根目录。部分玩家误将文件放入cstrike文件夹内，导致无法加载。正确路径应为游戏根目录下的 addons 文件夹对应位置。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">机器人智商太低/太高怎么办？</div>
+                    <div class="faq-answer">可在控制台输入 <code>pb difficulty 3</code> 调整难度（0=简单，1=普通，2=困难，3=专家）。也可在机器人菜单中实时调整。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">补丁会封号吗？</div>
+                    <div class="faq-answer">该补丁属于单机辅助增强工具，仅在本地离线模式使用，不修改游戏内存数据，因此不会触发VAC封禁。但请勿在在线服务器中使用。</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">是否支持所有地图？</div>
+                    <div class="faq-answer">大部分经典地图（如dust2、inferno、nuke等）已内置路点。第三方地图需要手动生成路点，使用pb wpmenu命令即可自动创建。</div>
+                </div>
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="sidebar">
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">补丁版本</h3>
+                    <ul class="widget-list">
+                        <li><span class="version-tag">v2.5</span> 稳定版（推荐）</li>
+                        <li><span class="version-tag">v3.0</span> 测试版</li>
+                        <li><span class="version-tag">v1.8</span> 经典版</li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">相关资源</h3>
+                    <ul class="widget-list">
+                        <li><a href="#">CS1.6 完整客户端下载</a></li>
+                        <li><a href="#">常见地图路点包</a></li>
+                        <li><a href="#">武器参数优化补丁</a></li>
+                        <li><a href="#">高亮模型补丁</a></li>
+                        <li><a href="#">去水印纯净版补丁</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">热门地图路点</h3>
+                    <ul class="widget-list">
+                        <li><a href="#">de_dust2 路点</a></li>
+                        <li><a href="#">de_inferno 路点</a></li>
+                        <li><a href="#">de_train 路点</a></li>
+                        <li><a href="#">de_nuke 路点</a></li>
+                        <li><a href="#">cs_assault 路点</a></li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-widget">
+                    <h3 class="widget-title">安装帮助</h3>
+                    <p style="font-size:0.9rem; color:#666;">遇到问题？查看详细的图文教程，或前往社区求助。</p>
+                    <p style="margin-top:10px;"><a href="#" style="color:#e67e22; text-decoration:none; font-weight:600;">进入帮助中心 →</a></p>
+                </div>
+            </aside>
+        </div>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h4>关于本站</h4>
+                <ul>
+                    <li><a href="#">网站介绍</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">免责声明</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>资源分类</h4>
+                <ul>
+                    <li><a href="#">加人补丁</a></li>
+                    <li><a href="#">路点文件</a></li>
+                    <li><a href="#">客户端下载</a></li>
+                    <li><a href="#">游戏工具</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>友情链接</h4>
+                <ul>
+                    <li><a href="#">反恐精英中文站</a></li>
+                    <li><a href="#">CS1.6玩家论坛</a></li>
+                    <li><a href="#">电竞资讯平台</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2025 cs1.6加人补丁专题站 · 本资源仅供学习交流使用，请于下载后24小时内删除</p>
+            <p style="margin-top:5px;">反恐精英1.6为Valve公司产品，本站与Valve无任何关联</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+              </html>
