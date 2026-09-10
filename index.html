@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>太极闫芳-争议太极人物与武术现象资讯专题</title>
+    <meta name="description" content="太极闫芳专题页面，盘点闫芳太极事件始末、相关视频争议、武术界评价与思考，了解这一引发广泛讨论的太极文化现象。">
+    <meta name="keywords" content="太极闫芳,闫芳太极,闫芳事件,闫芳视频,闫芳隔空打人,太极争议,武术圈">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background: #f4f1ec;
+            color: #2b2b2b;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* 页眉 */
+        .site-header {
+            background: #1e2a32;
+            padding: 16px 0;
+            border-bottom: 3px solid #c9a063;
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo-icon {
+            background: #c9a063;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #1e2a32;
+            font-size: 22px;
+        }
+        .logo-text {
+            color: #f0e9db;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .logo-text span {
+            color: #c9a063;
+        }
+        .header-desc {
+            color: #b0b8bf;
+            font-size: 14px;
+        }
+        .nav-menu {
+            margin-top: 12px;
+            border-top: 1px solid #34434d;
+            padding-top: 10px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px 28px;
+        }
+        .nav-menu a {
+            color: #d9d0c0;
+            text-decoration: none;
+            font-size: 15px;
+            padding: 4px 0;
+            border-bottom: 2px solid transparent;
+            transition: 0.2s;
+        }
+        .nav-menu a:hover {
+            color: #fff;
+            border-bottom-color: #c9a063;
+        }
+
+        /* 首屏 */
+        .hero {
+            background: linear-gradient(145deg, #2a3a44 0%, #1b262d 100%);
+            padding: 60px 0 55px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #dacfb8;
+        }
+        .hero-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            align-items: center;
+        }
+        .hero-text {
+            flex: 1 1 480px;
+        }
+        .hero-text h1 {
+            font-size: 36px;
+            color: #f5efe2;
+            line-height: 1.3;
+            margin-bottom: 16px;
+            font-weight: 800;
+        }
+        .hero-text h1 i {
+            font-style: normal;
+            color: #c9a063;
+        }
+        .hero-text p {
+            color: #c8d0d4;
+            font-size: 16px;
+            max-width: 560px;
+            margin-bottom: 12px;
+        }
+        .hero-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .hero-tags span {
+            background: rgba(201, 160, 99, 0.2);
+            border: 1px solid rgba(201, 160, 99, 0.5);
+            color: #e6d7b8;
+            padding: 4px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+        }
+        .hero-card {
+            flex: 0 1 320px;
+            background: #f8f4ec;
+            border-radius: 10px;
+            padding: 24px 22px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+        .hero-card h3 {
+            color: #1e2a32;
+            font-size: 18px;
+            border-left: 4px solid #c9a063;
+            padding-left: 14px;
+            margin-bottom: 16px;
+        }
+        .hero-card ul {
+            list-style: none;
+        }
+        .hero-card li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #d6ccb8;
+            font-size: 14px;
+            color: #3e3a33;
+            display: flex;
+            gap: 8px;
+        }
+        .hero-card li:last-child {
+            border-bottom: none;
+        }
+        .hero-card li::before {
+            content: "·";
+            color: #b8862e;
+            font-weight: bold;
+            font-size: 20px;
+            line-height: 1;
+        }
+
+        /* 通用区块 */
+        .section {
+            margin-bottom: 48px;
+        }
+        .section-title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 24px;
+            border-bottom: 2px solid #ddd0ba;
+            padding-bottom: 10px;
+        }
+        .section-title h2 {
+            font-size: 24px;
+            font-weight: 700;
+            color: #1e2a32;
+            position: relative;
+            padding-left: 16px;
+        }
+        .section-title h2::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 6px;
+            bottom: 6px;
+            width: 5px;
+            background: #c9a063;
+            border-radius: 3px;
+        }
+        .section-title .more {
+            font-size: 14px;
+            color: #7a6e5e;
+            text-decoration: none;
+        }
+        .section-title .more:hover {
+            color: #b8862e;
+        }
+
+        /* 事件时间线卡片 */
+        .timeline-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .timeline-card {
+            background: #fff;
+            border-radius: 8px;
+            padding: 24px 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-top: 4px solid #c9a063;
+            transition: transform 0.2s;
+        }
+        .timeline-card:hover {
+            transform: translateY(-4px);
+        }
+        .timeline-card .date {
+            font-size: 13px;
+            color: #a08a6a;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            margin-bottom: 8px;
+        }
+        .timeline-card h3 {
+            font-size: 18px;
+            color: #2b2b2b;
+            margin-bottom: 10px;
+        }
+        .timeline-card p {
+            font-size: 14px;
+            color: #5d564b;
+        }
+
+        /* 两列布局 */
+        .two-col {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+        .col-main {
+            flex: 2 1 600px;
+        }
+        .col-side {
+            flex: 1 1 300px;
+        }
+
+        /* 内容卡片 */
+        .content-block {
+            background: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            margin-bottom: 24px;
+        }
+        .content-block h3 {
+            font-size: 20px;
+            color: #1e2a32;
+            margin-bottom: 14px;
+            padding-bottom: 8px;
+            border-bottom: 1px solid #eee4d5;
+        }
+        .content-block p {
+            margin-bottom: 16px;
+            font-size: 15px;
+            text-align: justify;
+        }
+        .content-block ul {
+            padding-left: 20px;
+            margin-bottom: 16px;
+        }
+        .content-block li {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .highlight-box {
+            background: #faf6ee;
+            border-left: 5px solid #c9a063;
+            padding: 18px 20px;
+            border-radius: 0 8px 8px 0;
+            margin: 20px 0;
+        }
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        /* 评价列表 */
+        .quote-list {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .quote-item {
+            background: #f9f5ed;
+            border-radius: 8px;
+            padding: 18px 20px;
+            border-left: 4px solid #6b7a83;
+        }
+        .quote-item p {
+            font-size: 14px;
+            font-style: italic;
+            color: #3f3a32;
+            margin-bottom: 6px;
+        }
+        .quote-item .source {
+            font-size: 13px;
+            color: #8b7a5e;
+            font-weight: 600;
+            font-style: normal;
+        }
+
+        /* 视频争议解读 */
+        .video-points {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .video-point {
+            background: #f0ebe2;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+        .video-point .icon {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+        .video-point h4 {
+            font-size: 16px;
+            margin-bottom: 8px;
+            color: #1e2a32;
+        }
+        .video-point p {
+            font-size: 13px;
+            color: #5b5347;
+        }
+
+        /* 侧边栏 */
+        .side-box {
+            background: #fff;
+            border-radius: 10px;
+            padding: 24px 20px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+            margin-bottom: 24px;
+        }
+        .side-box h3 {
+            font-size: 18px;
+            color: #1e2a32;
+            border-left: 4px solid #c9a063;
+            padding-left: 12px;
+            margin-bottom: 16px;
+        }
+        .side-list {
+            list-style: none;
+        }
+        .side-list li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f0e9dd;
+            font-size: 14px;
+        }
+        .side-list li:last-child {
+            border-bottom: none;
+        }
+        .side-list a {
+            color: #3e3a33;
+            text-decoration: none;
+            transition: 0.2s;
+        }
+        .side-list a:hover {
+            color: #b8862e;
+        }
+        .side-tag {
+            display: inline-block;
+            background: #f0e9dd;
+            border-radius: 20px;
+            padding: 4px 14px;
+            font-size: 13px;
+            margin: 0 6px 8px 0;
+            color: #4a4238;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: #fff;
+            border-radius: 8px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+        }
+        .faq-item h4 {
+            font-size: 16px;
+            color: #1e2a32;
+            margin-bottom: 8px;
+            display: flex;
+            gap: 8px;
+        }
+        .faq-item h4::before {
+            content: "Q";
+            background: #c9a063;
+            color: #fff;
+            border-radius: 50%;
+            width: 24px;
+            height: 24px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 13px;
+            flex-shrink: 0;
+        }
+        .faq-item p {
+            font-size: 14px;
+            color: #555;
+            padding-left: 32px;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            background: #1e2a32;
+            color: #b0b8bf;
+            padding: 40px 0 20px;
+            margin-top: 50px;
+            font-size: 14px;
+        }
+        .footer-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        .footer-col h4 {
+            color: #e0d5c0;
+            margin-bottom: 14px;
+            font-size: 16px;
+        }
+        .footer-col a {
+            display: block;
+            color: #a0aab0;
+            text-decoration: none;
+            padding: 3px 0;
+        }
+        .footer-col a:hover {
+            color: #c9a063;
+        }
+        .footer-bottom {
+            border-top: 1px solid #33434d;
+            padding-top: 18px;
+            text-align: center;
+            font-size: 13px;
+            color: #7c878e;
+        }
+
+        /* 响应式 */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 40px 0;
+            }
+            .hero-text h1 {
+                font-size: 28px;
+            }
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 6px;
+            }
+            .nav-menu {
+                gap: 6px 18px;
+            }
+            .section-title h2 {
+                font-size: 20px;
+            }
+            .content-block {
+                padding: 20px;
+            }
+            .two-col {
+                gap: 20px;
+            }
+        }
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 24px;
+            }
+            .container {
+                padding: 0 14px;
+            }
+            .timeline-grid {
+                grid-template-columns: 1fr;
+            }
+            .video-points {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="container">
+        <div class="header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">太</div>
+                <div class="logo-text">太极<span>观察</span></div>
+            </div>
+            <div class="header-desc">武术现象 · 太极文化 · 争议求真</div>
+        </div>
+        <nav class="nav-menu">
+            <a href="#">首页</a>
+            <a href="#">太极人物</a>
+            <a href="#">事件回顾</a>
+            <a href="#">视频解析</a>
+            <a href="#">武术杂谈</a>
+            <a href="#">文化探讨</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <!-- 首屏 -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <h1>太极闫芳：<i>争议背后</i>的武术生态启示录</h1>
+                    <p>从一段段隔空发力视频，到全网热议的推手演示，太极闫芳成为武术圈最具争议性的符号之一。本专题梳理事件脉络、技术讨论与各方观点，带你理性看待这场关于传统武术的公共讨论。</p>
+                    <div class="hero-tags">
+                        <span># 闫芳太极</span>
+                        <span># 隔空打人</span>
+                        <span># 武术打假</span>
+                        <span># 传统武术</span>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <h3>事件关键词</h3>
+                    <ul>
+                        <li>经梧太极传人</li>
+                        <li>凌空劲争议</li>
+                        <li>2017年视频走红</li>
+                        <li>武术界广泛讨论</li>
+                        <li>传统武术现代化反思</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <!-- 事件时间线 -->
+        <section class="section">
+            <div class="section-title">
+                <h2>事件脉络梳理</h2>
+                <a href="#" class="more">更多时间节点 →</a>
+            </div>
+            <div class="timeline-grid">
+                <div class="timeline-card">
+                    <div class="date">2012年 前后</div>
+                    <h3>闫芳太极视频开始流传</h3>
+                    <p>网络上出现闫芳与弟子推手、发力演示视频，弟子们在其挥手之间纷纷弹跳、倒地，引发初步关注与质疑。</p>
+                </div>
+                <div class="timeline-card">
+                    <div class="date">2017年 5月</div>
+                    <h3>视频经过剪辑再次引爆网络</h3>
+                    <p>一段经过重新剪辑的闫芳演示视频在社交平台广泛传播，播放量激增，被网友戏称为“隔空打人”，由此进入大众视野。</p>
+                </div>
+                <div class="timeline-card">
+                    <div class="date">2017年 中旬</div>
+                    <h3>记者实地探访与体验</h3>
+                    <p>有媒体记者前往闫芳拳馆体验，亲身体验后表示并未感受到所谓“凌空劲”，相关报道让争议进一步升级。</p>
+                </div>
+                <div class="timeline-card">
+                    <div class="date">2017年 下旬</div>
+                    <h3>武术界人士公开质疑</h3>
+                    <p>多位武术教练、搏击选手及评论人发声，指出其演示不符合力学常识，认为属于配合表演或心理暗示。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 两列内容 -->
+        <div class="two-col">
+            <div class="col-main">
+                <!-- 深度解读 -->
+                <div class="content-block">
+                    <h3>闫芳太极争议的核心是什么？</h3>
+                    <p>太极闫芳引发的讨论，表面上是关于“凌空劲”是否真实存在，但更深层次触及了传统武术在当代社会的信任危机。支持者认为，太极内劲的展现方式需要师徒之间的长期默契，外行难以理解；质疑者则指出，任何违背基本物理规律的表现都值得警惕，尤其是当弟子们的反应明显超出合理范围时。</p>
+                    <p>从公开视频来看，闫芳的演示中弟子们往往在接触前就已开始移动或倒地，这种“未触先倒”的现象，在物理学和人体运动学上很难找到合理解释。这也成为公众质疑的核心锚点。</p>
+                    <div class="highlight-box">
+                        <p><strong>值得注意：</strong>传统武术中确实存在听劲、化劲等高级技巧，但这类技巧建立在双方真实接触、力量交互的基础上。与视频中呈现的“隔空”效果存在本质差异。</p>
+                    </div>
+                </div>
+
+                <!-- 技术视角 -->
+                <div class="content-block">
+                    <h3>从技术角度拆解视频中的现象</h3>
+                    <ul>
+                        <li><strong>接触前反应：</strong>多名弟子在闫芳手尚未触及身体时便做出弹跳或后退动作，这在运动心理学上可能属于条件反射或预期反应。</li>
+                        <li><strong>配合痕迹明显：</strong>部分视频中弟子们的倒地方向与发力方向不一致，且动作幅度夸张，缺乏真实受力下的自然形态。</li>
+                        <li><strong>缺乏对抗验证：</strong>所有演示均以弟子配合为前提，从未有独立第三方或陌生对手体验后证实其效果。</li>
+                    </ul>
+                    <p>当然，也有武术爱好者认为，视频经过剪辑和片段截取，不能完全代表现场实际情况。但作为公共传播内容，闫芳方面始终未提供更严谨的演示来回应质疑。</p>
+                </div>
+
+                <!-- 评价 -->
+                <div class="content-block">
+                    <h3>武术界与公众的不同声音</h3>
+                    <div class="quote-list">
+                        <div class="quote-item">
+                            <p>“如果这种隔空发力是真的，那现代物理学和人体科学都应该被改写。但显然，这更可能是一场精心设计的配合表演。”</p>
+                            <span class="source">—— 某搏击教练（匿名采访）</span>
+                        </div>
+                        <div class="quote-item">
+                            <p>“传统武术需要传承，但更需要反思。一些神化宣传伤害的不是某个人，而是整个武术文化的公信力。”</p>
+                            <span class="source">—— 武术文化研究者</span>
+                        </div>
+                        <div class="quote-item">
+                            <p>“我练了三十年太极，知道内劲存在，但绝不是视频里那种表现方式。真正的功夫在接触中体现，而不是隔着半米把人震飞。”</p>
+                            <span class="source">—— 某太极传人（化名）</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 视频争议解读 -->
+                <div class="content-block">
+                    <h3>那些流传甚广的视频到底展示了什么？</h3>
+                    <p>闫芳相关视频通常包含以下几类场景，我们不妨逐一拆解其争议点：</p>
+                    <div class="video-points" style="margin-top: 20px;">
+                        <div class="video-point">
+                            <div class="icon">🎥</div>
+                            <h4>推手演示</h4>
+                            <p>弟子们与闫芳搭手后，在极小的接触下被“弹开”。争议在于弟子们的倒地幅度与发力大小不成比例。</p>
+                        </div>
+                        <div class="video-point">
+                            <div class="icon">👥</div>
+                            <h4>隔空发力</h4>
+                            <p>闫芳挥手后，数米外的弟子们纷纷后倒。这是最受质疑的部分，被网友戏称为“气功外放”。</p>
+                        </div>
+                        <div class="video-point">
+                            <div class="icon">📹</div>
+                            <h4>媒体体验</h4>
+                            <p>记者亲身体验时，闫芳发力后记者并未有明显感觉，与弟子们的反应形成鲜明对比。</p>
+                        </div>
+                        <div class="video-point">
+                            <div class="icon">⚔️</div>
+                            <h4>实战质疑</h4>
+                            <p>有搏击爱好者提出约战检验，但闫芳方面始终未接受任何非弟子的验证挑战。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 延伸思考 -->
+                <div class="content-block">
+                    <h3>闫芳现象给传统武术的启示</h3>
+                    <p>无论闫芳本人及其团队初衷如何，这一系列事件已经对传统武术的公众形象产生了深远影响。一方面，它暴露了部分武术传承中存在的“玄学化”倾向；另一方面，也促使更多武术从业者开始重视科学化训练与理性传播。</p>
+                    <p>武术作为中国传统文化的重要组成部分，其价值不应被个别争议事件全盘否定。但在信息高度透明的时代，任何神化宣传都可能适得其反。真正有生命力的传承，应当经得起实践与科学的双重检验。</p>
+                    <p>对于普通观众而言，太极闫芳事件也是一个提醒：面对任何超出常识的“神功”演示，保持理性质疑，既不过度迷信，也不全盘否定传统武术的合理内核，才是更成熟的态度。</p>
+                </div>
+            </div>
+
+            <!-- 侧边栏 -->
+            <aside class="col-side">
+                <div class="side-box">
+                    <h3>相关人物与概念</h3>
+                    <ul class="side-list">
+                        <li><a href="#">闫芳是谁？经梧太极传人</a></li>
+                        <li><a href="#">凌空劲：传说还是虚构？</a></li>
+                        <li><a href="#">李经梧与陈式太极</a></li>
+                        <li><a href="#">推手与实战的距离</a></li>
+                        <li><a href="#">传统武术的现代化困境</a></li>
+                    </ul>
+                </div>
+
+                <div class="side-box">
+                    <h3>热门话题标签</h3>
+                    <div>
+                        <span class="side-tag">太极打假</span>
+                        <span class="side-tag">传统武术</span>
+                        <span class="side-tag">闫芳视频</span>
+                        <span class="side-tag">气功争议</span>
+                        <span class="side-tag">武术科学化</span>
+                        <span class="side-tag">推手真伪</span>
+                        <span class="side-tag">内劲是否存在</span>
+                    </div>
+                </div>
+
+                <div class="side-box">
+                    <h3>快速浏览</h3>
+                    <ul class="side-list">
+                        <li><a href="#">→ 闫芳事件完整时间线</a></li>
+                        <li><a href="#">→ 武术界人士评论汇总</a></li>
+                        <li><a href="#">→ 记者实地探访详情</a></li>
+                        <li><a href="#">→ 传统武术如何自救</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- FAQ 区块 -->
+        <section class="section" style="margin-top: 20px;">
+            <div class="section-title">
+                <h2>关于太极闫芳的常见疑问</h2>
+            </div>
+            <div class="faq-item">
+                <h4>闫芳的太极功夫是真是假？</h4>
+                <p>从目前公开的视频和多方反馈来看，其演示的“隔空发力”缺乏科学依据和独立验证。但闫芳本人及其弟子始终坚持真实性，因此无法简单定性。公众应保持理性判断。</p>
+            </div>
+            <div class="faq-item">
+                <h4>为什么她的弟子们反应那么夸张？</h4>
+                <p>可能涉及长期训练形成的条件反射、对师父的信任与心理暗示，以及视频拍摄时的配合因素。在缺乏第三方验证的情况下，这些反应难以被当作真实功力的证据。</p>
+            </div>
+            <div class="faq-item">
+                <h4>传统太极中真的有“凌空劲”吗？</h4>
+                <p>传统太极拳理中并无“隔空打人”的明确记载。太极讲究“听劲”“懂劲”，均需肢体接触感知对方力量。所谓“凌空劲”更多是近现代民间武术中的夸张演绎。</p>
+            </div>
+            <div class="faq-item">
+                <h4>闫芳事件对太极文化有何影响？</h4>
+                <p>短期内确实对太极的公众信任度造成冲击，但也引发了武术界对科学化传承的反思。长远来看，有助于淘汰虚假宣传，促进传统武术健康传播。</p>
+            </div>
+        </section>
+    </div>
+</main>
+
+<footer class="site-footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>太极观察</h4>
+                <p style="color: #a0aab0; max-width: 300px; line-height: 1.8;">以理性视角关注太极文化、武术现象与争议事件，力求为读者提供客观、有深度的内容参考。</p>
+            </div>
+            <div class="footer-col">
+                <h4>内容栏目</h4>
+                <a href="#">人物专访</a>
+                <a href="#">事件专题</a>
+                <a href="#">技术解析</a>
+                <a href="#">文化随笔</a>
+            </div>
+            <div class="footer-col">
+                <h4>相关资源</h4>
+                <a href="#">武术科普</a>
+                <a href="#">太极教学</a>
+                <a href="#">争议事件录</a>
+                <a href="#">联系我们</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 太极观察专题页 | 本页内容基于公开信息整理，仅供文化讨论与信息参考</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+  </html>
